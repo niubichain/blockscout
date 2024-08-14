@@ -30,6 +30,10 @@ services:
       - db:database
     environment:
         ETHEREUM_JSONRPC_VARIANT: 'geth'
+        ETHEREUM_JSONRPC_HTTP_URL: http://60.212.189.153:8545/
+        ETHEREUM_JSONRPC_TRACE_URL: http://60.212.189.153:8545/
+        ETHEREUM_JSONRPC_WS_URL: ws://60.212.189.153:8546/
+        CHAIN_ID: '9527000'
 
   visualizer:
     extends:
